@@ -3,6 +3,78 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+
+prebuilt_etc {
+    name: "init.ago.rc",
+    src: "etc/init.ago.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.project.rc",
+    src: "etc/meta_init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.rc",
+    src: "etc/meta_init.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.project.rc",
+    src: "etc/factory_init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "factory_init.connectivity.rc",
+    src: "etc/factory_init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "multi_init.rc",
+    src: "etc/multi_init.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oppo.reserve.rc",
+    src: "etc/init.oppo.reserve.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oppo.fingerprints.sh",
+    src: "init.oppo.fingerprints.sh",
+    sub_dir: "bin",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oppo.fingerprints.rc",
+    src: "etc/init.oppo.fingerprints.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.aee.rc",
+    src: "etc/init.aee.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+
 prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
@@ -18,14 +90,14 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6768.rc",
+    name: "init.mt6785.rc",
     src: "etc/init.mt6768.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.mt6768.usb.rc",
+    name: "init.mt6785.usb.rc",
     src: "etc/init.mt6768.usb.rc",
     sub_dir: "init/hw",
     vendor: true,
@@ -46,22 +118,22 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "fstab.mt6768",
-    src: "etc/fstab.mt6768",
+    name: "fstab.mt6785",
+    src: "etc/fstab.mt6785",
     vendor: true,
     ramdisk_available: true,
 }
 
 prebuilt_etc {
-    name: "ueventd.mtk.rc",
+    name: "ueventd.oppo.rc",
     filename: "ueventd.rc",
-    src: "etc/ueventd.mtk.rc",
+    src: "etc/ueventd.oppo.rc",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.recovery.mt6768.rc",
-    src: "etc/init.recovery.mt6768.rc",
+    name: "init.recovery.mt6785.rc",
+    src: "etc/init.recovery.mt6785.rc",
     sub_dir: "init",
     recovery: true,
 }

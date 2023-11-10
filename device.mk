@@ -304,34 +304,43 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.recovery.mt6768.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
-    init.mt6768.rc \
-    init.mt6768.usb.rc \
+    fstab.mt6785 \
+    init.mt6785.rc \
+    init.mt6785.usb.rc \
+    init.oppo.reserve.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    fstab.mt6768 \
-    fstab.mt6768.ramdisk \
-    ueventd.mtk.rc
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
+    init.oppo.fingerprints.rc
 
 # Runtime Resource Overlays 
 PRODUCT_PACKAGES += \
-    ApertureOverlayRMX2020 \
-    CarrierConfigOverlayRMX2020 \
-    DialerOverlayRMX2020 \
-    DocumentsUIOverlayRMX2020 \
-    FrameworksResOverlayRMX2020 \
-    SettingsOverlayRMX2020 \
-    SettingsProviderOverlayRMX2020 \
-    SystemUIOverlayRMX2020 \
-    TelephonyOverlayRMX2020 \
-    TetheringResOverlayRMX2020 \
-    WifiResOverlayRMX2020
+    ApertureOverlayRMX2001 \
+    CarrierConfigOverlayRMX2001 \
+    DialerOverlayRMX2001 \
+    DocumentsUIOverlayRMX2001 \
+    FrameworksResOverlayRMX2001 \
+    SettingsOverlayRMX2001 \
+    SettingsProviderOverlayRMX2001 \
+    SystemUIOverlayRMX2001 \
+    TelephonyOverlayRMX2001 \
+    TetheringResOverlayRMX2001 \
+    WifiResOverlayRMX2001
 
 ifneq ($(ARROW_GAPPS),true)
 PRODUCT_PACKAGES += \
-    ApertureQRScannerOverlayRMX2020
+    ApertureQRScannerOverlayRMX2001
 endif
 
 # Secure element
