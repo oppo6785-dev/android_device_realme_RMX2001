@@ -1,4 +1,4 @@
-package org.lineageos.dt2w.RMX2020;
+package org.lineageos.dt2w.RMX2001;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
